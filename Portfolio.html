@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="CSS.css"
+    
+</head>
+<body>
+  <nav>
+      <a href="file:///D:/UNIVERISTY%20OF%20ADVANCED%20TECHNOLOGY/CSC150%20-%20Intro%20to%20programming/Week%204%20-%20CSS/Week%204%20-%20CSS.html">
+          <img src="White LOgo.png" alt="Fairgame logo">
+      </a>
+      <ul>
+          <li><a href="Week 4 - CSS.html">Game/Intro</a></li>
+          <li><a href="contact.html">Contact/Sound</a></li>
+          <li><a href="Portfolio.html">Dark Mode</a></li>
+          <li><a href="Spring 2025 Boards.html">Table</a></li>
+          <li><a href="JAVA EXAMPLE WEEK 6.html">Java/user input</a></li>
+
+
+      </ul>
+  </nav>
+
+       
+
+
+  <button type="button" id="displayMode">Click Me </button>
+
+<script>
+ <button type="button" id="displayMode">Click Me </button>
+let displayModeToggle = document.getElementById('displayMode'); 
+
+let currentMode = 'light'; 
+displayModeToggle.addEventListener("click", () =>{ 
+    if(currentMode === 'light'){ 
+        currentMode = 'dark'; 
+        document.querySelector("body").style.backgroundColor = "black"; 
+    } 
+    else{ 
+        currentMode = 'light'; 
+        document.querySelector("body").style.backgroundColor = "white"; 
+    } 
+    console.log(currentMode); 
+}); 
+</script>
+  
+  <!-- Grid for photos -->
+  <div class="w3-row w3-row-padding" style="margin: 0;">
+    <div class="w3-col s12 m6 l4">
+      <img src="_MG_6249.jpg" style="width: 100%; padding: 8px;">
+      <img src="_MG_6243.jpg" style="width: 100%; padding: 8px;">
+      <img src="_MG_6240.jpg" style="width: 100%; padding: 8px;">
+    </div>
+
+    <div class="w3-col s12 m6 l4">
+      <img src="_MG_6253.jpg" style="width: 100%; padding: 8px;">
+      <img src="_MG_6293.jpg" style="width: 100%; padding: 8px;">
+      <img src="_MG_6294.jpg" style="width: 100%; padding: 8px;">
+    </div>
+
+    <div class="w3-col s12 m6 l4">
+      <img src="larry.JPG" style="width: 100%; padding: 8px;">
+    </div>
+  </div>
+</div>
+
+<style>
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px; /* space between images */
+    padding: 16px;
+  }
+
+  .photo-item {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional: adds a subtle shadow */
+    object-fit: cover; /* ensures images cover the area without distorting */
+  }
+
+  h2 {
+    text-align: center;
+   
+  }
+</style>
+
+
+
+
+
+
+
+
